@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>노란 보도블럭 - 오늘부터 시작</title>
+    <style>
+    /* 기본 리셋 */
+    body {
+        margin: 0;
+        font-family: 'Inter', 'Noto Sans KR', sans-serif;
+        color: #333; /* 기본 텍스트 색상 */
+        line-height: 1.6;
+    }
+
+    /* 이미지 스타일 */
+    img {
+        display: block; 
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px; 
+        margin: 1rem 0; 
+    }
+
+    /* 헤더 스타일 - 배경을 전체 너비로 확장 */
+    header {
+        background: blue;
+        color: yellow;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        /* 기존 max-width, margin: auto 제거 -> 배경이 사이드를 꽉 채움 */
+        padding-left: 0; 
+        padding-right: 0;
+    }
+    
+    /* 헤더 콘텐츠 컨테이너: 내용물만 중앙 정렬 */
+    .header-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 0 10px; /* 좌우 패딩 적용 */
+    }
+
+    /* 섹션/푸터 스타일 수정: 배경이 전체 너비를 차지하도록 변경 */
+    section, footer {
+        padding: 0; /* 콘텐츠 컨테이너로 패딩을 이동 */
+    }
+
+    /* 콘텐츠 컨테이너: 실제 내용만 중앙 800px로 정렬하고 패딩 적용 */
+    .content-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    /* 제목 스타일 */
+    h1 {
+        font-size: 3.5rem; /* 4rem에서 3.5rem으로 줄여서 한 줄에 들어오도록 조정 */
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: blue; /* 기본 제목색 (밝은 섹션 및 4번 섹션에 적용) */
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 1.2rem;
+    }
+
+    /* 섹션별 배경색 정의 */
+    .section-color-1, .section-color-6 {
+        background-color: #f7f7f7; /* 연한 회색 (밝은 섹션) */
+        color: #333; /* 기본 텍스트 색상 */
+    }
+    
+    /* 4번째 섹션: 흰색 배경, 검정 텍스트 */
+    .section-color-4 {
+        background-color: #ffffff; /* 흰색 배경 */
+        color: #333; /* 검정 본문 텍스트 유지 */
+    }
+
+    /* 2, 3, 5번째 섹션 스타일: 검정 배경, 흰색 텍스트 */
+    .section-color-2, .section-color-3, .section-color-5 {
+        background-color: #000000; /* 검정 배경 적용 */
+        color: #ffffff; /* 본문 텍스트를 흰색으로 변경 */
+    }
+
+    /* 검정 배경 섹션(2, 3, 5)의 제목(h) 색상을 노란색으로 변경 */
+    .section-color-2 h2, .section-color-2 h3, .section-color-2 h4, .section-color-2 h5, .section-color-2 h6,
+    .section-color-3 h2, .section-color-3 h3, .section-color-3 h4, .section-color-3 h5, .section-color-3 h6,
+    .section-color-5 h2, .section-color-5 h3, .section-color-5 h4, .section-color-5 h5, .section-color-5 h6 {
+        color: yellow; /* 노란색으로 변경 */
+    }
+    
+    </style>
+</head>
+<body>
+    <nav></nav>
+
+<header>
+    <div class="header-container">
+        <h1>노란 보도블럭 꼭 노란색 이어야해?</h1>
+    </div>
+</header>
+
+<section class="section-color-1">
+    <div class="content-container">
+        <h2>점자블럭</h2>
+        <p>노란 보도 블럭의 진짜 이름은 점자블럭 입니다. 시각장애인 안내 블록의 역할을 합니다.</p>
+        <img src="1.png">
+    </div>
+</section>
+
+<section class="section-color-2">
+    <div class="content-container">
+        <h3>시각 장애인? 아예 안보이는 거 아님?</h3>
+        <p>보통 시력이 아예 안보이는 맹인을 생각 하겠지만 시각 장애인들은 대부분 빛과 색을 구분할 정도로 시력이 남아있는 사람들입니다.</p>
+        <img src="aa.jpg.png">
+    </div>
+</section>
+
+<section class="section-color-3">
+    <div class="content-container">
+        <h4>어떤 도시는 ‘예쁘지 않다’며  점자블럭 색을 바꿨다구?</h4>
+        <p>시각장애인의 보행을 돕는 점자블록을 인도 보도블록과 같은 회색 점자블록으로 설치해 시각장애인들에게 위험을 안겨주고 있습니다.</p>
+        <img src="2.png">
+    </div>
+</section>
+
+<section class="section-color-4">
+    <div class="content-container">
+        <h5>시각장애인 김모씨</h5>
+        <p>“길을 걷다가 노란 띠처럼 생긴 점자블록이 흐릿하게나마 보이면 횡단보도 앞 이거나 장애물이 있다는 것을 알고 멈춥니다.”</p>
+        <!-- 흰색 배경에 잘 보이도록 플레이스홀더 이미지 색상을 변경합니다. -->
+        <img src="3.png">
+    </div>
+</section>
+
+<section class="section-color-5">
+    <div class="content-container">
+        <h6>회색 보도블록은 ‘기능’을 잃은 디자인</h6>
+        <p>회색 블록은 저시력자의 눈에 거의 보이지 않습니다. 결국 ‘배려’로 만들어진 시스템이 무관심으로 인해 장애물이 되어버린 것입니다.</p>
+        <img src="4.png">
+    </div>
+</section>
+
+<section class="section-color-6">
+    <div class="content-container">
+        <h6>노란보도 블럭 꼭 노랑색 이어야해?</h6>
+        <p>노란색을 없앤 순간 누군가의 시선을 배려하지 않은 도시가 됩니다. 점자블럭의 색은 단순한 장식이 아니라사용자의 안전을 설계한 의사소통의 도구 입니다.</p>
+        <img src="5.png">
+    </div>
+</section>
+
+<footer>
+    <div class="content-container">
+        <p>25100955 김주희</p>
+    </div>
+</footer>
+</body>
+</html>
